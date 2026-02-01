@@ -1,0 +1,36 @@
+.cabecalho {
+    background-color: var(--bg-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: var(--text-main);
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover,
+.menu-login a:hover {
+    color: var(--accent);
+}
+
+.menu-login a {
+    color: var(--text-main);
+    font: 500 1rem "Inter", sans-serif;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.btn-login {
+    background-color: var(--bg-secondary);
+    border-radius: 4px;
+}

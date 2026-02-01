@@ -1,0 +1,29 @@
+/* Reset do CSS */
+body, h1, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin-top: -4px;
+}

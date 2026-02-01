@@ -1,0 +1,6 @@
+/* CSS Reutilizavel */ 
+@import "./global/cor.css";
+@import "./global/utilitarios.css";
+
+
+@import "./header/cabecalho.css";

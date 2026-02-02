@@ -1,5 +1,5 @@
 /* Reset do CSS */
-body, h1, ul {
+body, h1, ul, p {
     margin: 0px;
     padding: 0px;
 }
@@ -7,6 +7,11 @@ body, h1, ul {
 ul, a {
     list-style: none;
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .logo {
@@ -26,4 +31,20 @@ ul, a {
     letter-spacing: 4px;
     color: var(--accent);
     margin-top: -4px;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: var(--accent);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    padding: 15px 30px;
+    border-radius: 7px;
+}
+
+.btn-principal:hover {
+    background-color: var(--hover-primary);
 }

@@ -5,3 +5,6 @@
 
 @import "./header/cabecalho.css";
 @import "./header/introducao.css";
+
+@import "./main/sobre.css";
+@import "./main/card.css";

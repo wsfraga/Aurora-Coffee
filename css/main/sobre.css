@@ -1,0 +1,46 @@
+.bg-sobre {
+    background-color: var(--bg-main);
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+.sobre-imagem img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-conteudo h2{
+    color: var(--accent);
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid var(--border);
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.sobre-conteudo h1 {
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.sobre-conteudo p {
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    max-width: 45ch;
+}

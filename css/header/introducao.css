@@ -12,7 +12,8 @@
 .introducao-imagem img{
     border-radius: 4px;
     object-fit: cover;
-    height: 700px;
+    width: 80%;
+    max-height: 700px;
     justify-self: center;
 }
 

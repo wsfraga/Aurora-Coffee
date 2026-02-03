@@ -22,19 +22,15 @@
     color: var(--accent);
 }
 
-.menu-login a {
-    font: 500 1rem "Inter", sans-serif;
-    padding: 10px;
-    letter-spacing: 1px;
-}
-
 .btn-login {
     background-color: var(--accent);
     border-radius: 7px;
     color: #ffffff;
+    padding: 10px;
+    letter-spacing: 1px;
+    font: 500 1rem "Inter", sans-serif;
 }
 
 .btn-login:hover {
     background-color: var(--hover-primary);
-;
 } 

@@ -1,5 +1,7 @@
-.cabecalho {
+.bg-cabecalho {
     background-color: var(--bg-main);
+}
+.cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,6 +16,7 @@
 .menu a {
     color: var(--text-main);
     padding: 10px;
+    font-size: 1.2rem;
     font-family: "Inter", sans-serif;
     border-bottom: 2px solid transparent;
 }

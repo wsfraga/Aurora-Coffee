@@ -14,12 +14,9 @@
 .rodape-conteudo h1 {
     max-width: max-content;
     color: var(--primary);
-    font-size: 3rem;
-    font-family: "Playfair Display", serif;
+    font: 300 3rem/1.2 "Playfair Display", serif;
     text-transform: uppercase;
-    font-weight: 300;
     letter-spacing: 4px;
-    line-height: 2.3rem;
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -27,10 +24,8 @@
 .rodape-conteudo span{
     display: block;
     color: var(--primary);
-    font-family: "Inter", sans-serif;
+    font: 300 1.1rem "Inter", sans-serif;
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.1rem;
     letter-spacing: 5px;
     text-align: center;
     position: relative;
@@ -59,10 +54,8 @@
 }
 
 .rodape-conteudo p {
-    font-size: 1.1rem;
     color: var(--text-secondary);
-    font-family: "Inter", sans-serif;
-    line-height: 1.5;
+    font: 1.1rem/1.5 "Inter", sans-serif;
     margin-bottom: 32px;
 }
 
@@ -71,22 +64,23 @@
     gap: 20px;
 }
 
-.conteudo-redes img {
+.conteudo-redes img,
+.copy-pagamento img {
     width: 32px;
 }
 
-.rodape-lista h3, .rodape-contato h3{
+.rodape-lista h3, 
+.rodape-contato h3{
     color: var(--primary);
-    font-family: "Inter", sans-serif;
+    font: 600 .9rem "Inter", sans-serif;
     text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 38px;
     position: relative;
 }
 
-.rodape-lista h3::before, .rodape-contato h3::before {
+.rodape-lista h3::before, 
+.rodape-contato h3::before {
     content: "";
     width: 50px;
     height: 1.3px;
@@ -108,12 +102,13 @@
     background-size: 28px;
 }
 
-.rodape-lista a:hover, .rodape-contato a:hover {
+.rodape-lista a:hover, 
+.rodape-contato a:hover {
     color: var(--hover-primary);
 }
 
 .rodape-lista li::before {
-    content: url("../../assets/imgs/chevron-right\ \(1\).svg");
+    content: url("../../assets/imgs/icones/seta.svg");
     display: inline-block;
     position: absolute;
     top: 2px;
@@ -159,6 +154,8 @@
     width: 64px;
 }
 
+/* copy */
+
 .copy{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -180,8 +177,4 @@
     text-transform: uppercase;
     font-size: .9rem;
     letter-spacing: 1px;
-}
-
-.copy-pagamento img {
-    width: 32px;
 }

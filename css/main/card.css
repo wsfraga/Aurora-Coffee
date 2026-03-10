@@ -13,21 +13,18 @@
 
 .produto-titulo h2 {
     color: var(--primary);
+    font: 600 3rem "Playfair Display", serif;
     letter-spacing: 2px;
-    font-size: 3rem;
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
     margin-bottom: 16px;
 }
 
 .produto-titulo p {
-    font-size: 1.3rem;
+    font: 1.3rem "Inter", sans-serif;
+    color: var(--text-main);
     width: 45ch;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 12px;
-    color: var(--text-main);
-    font-family: "Inter", sans-serif;
 }
 
 .produto-titulo a {
@@ -42,6 +39,8 @@
 .produto-titulo a:hover {
     color: var(--hover-primary);
 }
+
+/* -- Card -- */
 
 .produto-card {
     display: flex;
@@ -73,9 +72,7 @@
 }
 
 .card h3 {
-    font-size: 1.4rem;
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
+    font: 500 1.4rem "Playfair Display", serif;
     margin-bottom: 8px;
     color: var(--primary);
     grid-column: 1 / -1;
@@ -83,9 +80,7 @@
 
 .card p {
     color: var(--text-main);
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font: 400 1rem "Inter", sans-serif;
     min-height: 110px;
     text-align: start;
     grid-column: 1 / -1;
@@ -94,9 +89,7 @@
 
 .card-conteudo span {
     color: var(--text-main);
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font: 400 1rem "Inter", sans-serif;
     text-align: start;
     grid-column: 1 / 1;
     margin-bottom: 6px;
@@ -112,8 +105,7 @@
     color: #ffffff;
     background-color: var(--accent);
     border-radius: 8px;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font: 500 1rem "Inter", sans-serif;
     letter-spacing: 2px;
     margin-bottom: 6px;
 }

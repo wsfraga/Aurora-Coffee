@@ -14,19 +14,24 @@ img {
     max-width: 100%;
 }
 
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .logo {
-    font-family: "Playfair Display", serif;
-    font-size: 2rem;
-    font-weight: 600;
+    font: 600 2rem "Playfair Display", serif;
     color: var(--primary);
     letter-spacing: 1px;
 }
 
 .logo span {
     display: block;
-    font-family: "Inter", sans-serif;
-    font-style: italic;
-    font-size: 0.8rem;
+    font: italic 0.8rem "Inter", sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: var(--accent);
@@ -36,9 +41,7 @@ img {
 .btn-principal {
     display: inline-block;
     background-color: var(--accent);
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
+    font: 500 1.25rem "Inter", sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     padding: 15px 30px;

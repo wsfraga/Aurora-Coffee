@@ -72,7 +72,7 @@
 .rodape-lista h3, 
 .rodape-contato h3{
     color: var(--primary);
-    font: 600 .9rem "Inter", sans-serif;
+    font: 600 1rem "Inter", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 38px;
@@ -154,12 +154,39 @@
     width: 64px;
 }
 
+@media (max-width: 1000px){
+    .rodape {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+
+    .rodape-contato {
+        grid-column: 2/3;
+    }
+}
+
+@media (max-width: 800px){
+    .rodape {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .rodape-contato {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 600px){
+    .rodape {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* copy */
 
 .copy{
     padding-top: 30px;
     padding-bottom: 30px;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     color: var(--text-main);
@@ -177,4 +204,16 @@
     text-transform: uppercase;
     font-size: .9rem;
     letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+    .copy {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: .8rem;
+    }
+
+    .copy-pagamento{
+        font-size: .8rem
+    }
 }

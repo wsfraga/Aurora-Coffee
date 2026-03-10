@@ -11,6 +11,7 @@
 }
 
 .sobre-imagem img{
+    border-radius: 4px;
     height: 100%;
     object-fit: cover;
 }
@@ -39,4 +40,33 @@
     color: var(--text-secondary);
     margin-bottom: 16px;
     max-width: 45ch;
+}
+
+@media (max-width: 1000px) {
+    .sobre {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .sobre-conteudo h1 {
+        font-size: 2.3rem;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .sobre {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .sobre-imagem {
+        width: 100%;
+        max-height: 600px;
+    }
 }

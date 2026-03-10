@@ -1,8 +1,10 @@
 .bg-cabecalho {
-    background-color: var(--bg-main);
+    background-color: var(--bg-secondary);
 }
 .cabecalho {
     display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
@@ -10,6 +12,7 @@
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -23,4 +26,10 @@
 
 .menu a:hover {
     color: var(--accent);
+}
+
+@media (max-width: 800px) {
+    .menu a {
+        font-size: 1.1rem;
+    }
 }

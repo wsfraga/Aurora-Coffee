@@ -1,0 +1,187 @@
+.bg-rodape {
+    background-color: #BFAF9F;
+}
+
+.rodape {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1.3px solid var(--accent);
+}
+
+.rodape-conteudo h1 {
+    max-width: max-content;
+    color: var(--primary);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 2.3rem;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.rodape-conteudo span{
+    display: block;
+    color: var(--primary);
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.rodape-conteudo span::after {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1.3px;
+    background-color: var(--accent);
+    position: absolute;
+    right: 30px;
+    top: 50%;
+}
+
+.rodape-conteudo span::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1.3px;
+    background-color: var(--accent);
+    position: absolute;
+    left: 25px;
+    top: 50%;
+}
+
+.rodape-conteudo p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.conteudo-redes {
+    display: flex;
+    gap: 20px;
+}
+
+.conteudo-redes img {
+    width: 32px;
+}
+
+.rodape-lista h3, .rodape-contato h3{
+    color: var(--primary);
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 38px;
+    position: relative;
+}
+
+.rodape-lista h3::before, .rodape-contato h3::before {
+    content: "";
+    width: 50px;
+    height: 1.3px;
+    bottom: -15px;
+    background-color: var(--accent);
+    position: absolute;
+}
+
+.rodape-lista li{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.rodape-lista a {
+    color: var(--text-secondary);
+    font-family: "Inter", sans-serif;
+    padding: 5px 10px;
+    background-size: 28px;
+}
+
+.rodape-lista a:hover, .rodape-contato a:hover {
+    color: var(--hover-primary);
+}
+
+.rodape-lista li::before {
+    content: url("../../assets/imgs/chevron-right\ \(1\).svg");
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: -5px;
+}
+
+.rodape-contato li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rodape-contato img {
+    width: 24px;
+}
+
+.rodape-contato a{
+    color: var(--text-secondary);
+    font-family: "Inter", sans-serif;
+    padding: 5px 10px;
+}
+
+.rodape-contato span {
+    color: var(--primary);
+    display: block;
+    font-size: .9rem;
+}
+
+.rodape-contato p {
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: var(--primary);
+    letter-spacing: 1px;
+    line-height: 1.25;
+}
+
+.rodape-contato .entrega{
+    display: flex;
+    align-items: center;
+}
+
+.entrega img {
+    width: 64px;
+}
+
+.copy{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-main);
+    font-family: "Inter", sans-serif;
+}
+
+.copy-pagamento{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.copy-pagamento p {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.copy-pagamento img {
+    width: 32px;
+}

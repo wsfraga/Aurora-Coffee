@@ -186,7 +186,7 @@
 .copy{
     padding-top: 30px;
     padding-bottom: 30px;
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     color: var(--text-main);
@@ -215,5 +215,15 @@
 
     .copy-pagamento{
         font-size: .8rem
+    }
+}
+
+@media (max-width: 600px) {
+    .copy {
+        display: inline-block;
+    }
+    
+    .copy p {
+        margin-bottom: 8px;
     }
 }

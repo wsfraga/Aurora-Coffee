@@ -123,6 +123,10 @@
     .introducao-lista {
         display: none;
     }
+
+    .introducao-sobre a {
+        margin-bottom: 0px;
+    }
 }
 @media (max-width: 600px) {
     .introducao-sobre h1 {

@@ -1,5 +1,5 @@
 .bg-cabecalho {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-main);
 }
 .cabecalho {
     display: flex;
@@ -13,19 +13,36 @@
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
 }
 
 .menu a {
-    color: var(--text-main);
-    padding: 10px;
-    font-size: 1.2rem;
-    font-family: "Inter", sans-serif;
-    border-bottom: 2px solid transparent;
+    color: var(--text-secondary);
+    font: 400 1rem "Inter", sans-serif;
+    padding: 20px 0;
+    position: relative;
 }
 
-.menu a:hover {
-    color: var(--accent);
+.menu a::after {
+    content: "";
+    bottom: 10px;
+    width: 100%;
+    height: 1.5px;
+    left: 0px;
+    background-color: var(--accent);
+    position: absolute;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .3s ease;
+}
+
+.menu a:hover::after {
+    transform: scaleX(1);
+}
+
+.menu a.ativo::after {
+    transform: scaleX(1);
+    
 }
 
 @media (max-width: 800px) {

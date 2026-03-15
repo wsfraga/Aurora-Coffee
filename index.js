@@ -18,3 +18,29 @@ function navegacaoMenu() {
 }
 
 navegacaoMenu();
+
+function scrollFixo() {
+   const menu = document.querySelector(".js-scrollFixo");
+   let ultimoScroll = 0;
+
+   function esconderScroll() {
+      const scrollAtual = window.scrollY;
+      const alturaMenu = menu.offsetHeight;
+      
+      const scrollDescendo = scrollAtual > alturaMenu && scrollAtual < ultimoScroll;
+
+      if(scrollDescendo) {
+         menu.classList.add("menuScrollAtivo");
+         document.body.style.paddingTop = alturaMenu + "px";
+      } else {
+         menu.classList.remove("menuScrollAtivo");
+         document.body.style.paddingTop = 0;
+      }
+
+      ultimoScroll = scrollAtual;
+   }
+
+   window.addEventListener("scroll", esconderScroll);
+}
+
+scrollFixo()

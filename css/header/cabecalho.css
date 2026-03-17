@@ -32,7 +32,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
-
 }
 
 .menu {
@@ -65,9 +64,8 @@
     transform: scaleX(1);
 }
 
-.menu a.ativo::after {
+.menu a.menuLinkAtivo::after {
     transform: scaleX(1);
-    
 }
 
 @media (max-width: 800px) {

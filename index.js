@@ -1,24 +1,3 @@
-function navegacaoMenu() {
-   const navegacao = document.querySelectorAll('.menu li a');
-
-   if (navegacao.length) {
-      navegacao[0].classList.add("ativo");
-
-      function navegacaoAtiva(event) {
-         navegacao.forEach((sessao) => {
-            sessao.classList.remove("ativo");
-         })
-         event.currentTarget.classList.add("ativo");
-      }
-      
-      navegacao.forEach((item) => {
-         item.addEventListener("click", navegacaoAtiva);
-      });
-   }
-}
-
-navegacaoMenu();
-
 function scrollFixo() {
    const menu = document.querySelector(".js-scrollFixo");
    let ultimoScroll = 0;
@@ -26,10 +5,12 @@ function scrollFixo() {
    function esconderScroll() {
       const scrollAtual = window.scrollY;
       const alturaMenu = menu.offsetHeight;
-      
-      const scrollDescendo = scrollAtual > alturaMenu && scrollAtual < ultimoScroll;
 
-      if(scrollDescendo) {
+      const passouDoMenu = scrollAtual > alturaMenu;
+      const estaSubindo = scrollAtual < ultimoScroll;
+      const scrollSubindo = passouDoMenu && estaSubindo;
+
+      if (scrollSubindo) {
          menu.classList.add("menuScrollAtivo");
          document.body.style.paddingTop = alturaMenu + "px";
       } else {
@@ -44,3 +25,38 @@ function scrollFixo() {
 }
 
 scrollFixo()
+
+function navegacaoMenu() {
+   const sessoes = document.querySelectorAll(".js-sessoes");
+   const navegacaoMenu = document.querySelectorAll(".menu li a")
+
+   if (navegacaoMenu.length) {
+      navegacaoMenu[0].classList.add("menuLinkAtivo");
+
+      function menuAtivo() {
+         const posicaoDoScroll = window.scrollY;
+         const tamanhoHeader = document.querySelector("header").offsetHeight;
+         let idSessaoAtiva = "";
+
+         sessoes.forEach((item) => {
+            const topoSessao = item.offsetTop - tamanhoHeader;
+            const fimDaSessao = item.offsetHeight + topoSessao;
+
+            if (posicaoDoScroll >= topoSessao && posicaoDoScroll < fimDaSessao) {
+               idSessaoAtiva = item.getAttribute("id");
+            }
+         })
+
+         navegacaoMenu.forEach((linksDoMenu) => {
+            linksDoMenu.classList.remove("menuLinkAtivo");
+
+            if (linksDoMenu.getAttribute("href") === `#${idSessaoAtiva}`) {
+               linksDoMenu.classList.add("menuLinkAtivo");
+            }
+         })
+      }
+      window.addEventListener("scroll", menuAtivo);
+   }
+}
+
+navegacaoMenu();
